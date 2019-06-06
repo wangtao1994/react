@@ -1,0 +1,16 @@
+.shopOul{width: 100%;}
+.shopOul>li{padding: 2%;width: 100%;box-sizing: border-box;border-bottom: 1px solid #F1F1F1;}
+.title{display: flex;align-items: center;border-bottom: 1px solid #F1F1F1;padding-bottom: .5em;}
+.title>input{margin-right: .5em;}
+.shop_content{display: flex;flex-direction: row;display: flex;justify-content: center;align-items: center;}
+.shopleft{width: 10%;display: flex;justify-content: center;align-items: center;}
+.shopright{width: 90%;padding-top: .5em;display: flex;position: relative;}
+.shopimg{width: 100%; height: 100%;}
+.shoplogo{width: 5em; height: 5em;}
+.desclp{margin-left: .5em;position: relative;}
+.desclp>P{padding-top: .3em;}
+.price{font-size: 1.5em;font-weight: 600;color: #ff5001;}
+.addNumber{position: absolute; right: -10%;border: 1px solid #F1F1F1;bottom: 0em;}
+.Numberinput>input{resize: none;border: none;width: 30px;text-align: center;}
+.add{border-right: 1px solid #F1F1F1;width: 30px;display: inline-block;text-align: center;padding: 2% 0;font-size: 1.5em;}
+.unadd{border-left: 1px solid #F1F1F1;width: 30px;display: inline-block;text-align: center;padding: 2% 0;font-size: 1.5em;}
