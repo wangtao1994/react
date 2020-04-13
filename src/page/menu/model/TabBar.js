@@ -1,13 +1,14 @@
-import React, {Component, PropTypes} from 'react'
+import React, {Component} from 'react'
 import {TabBar, Icon} from 'antd-mobile';
 import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
 //import createBrowserHistory from 'history/createBrowserHistory';
 //const history = createBrowserHistory();
 import {   hashHistory } from 'react-router';
 class MyTabBar extends React.Component {
     render() {
         const {selectedTab, changeTab, page,history} = this.props;
-        console.log("ffffvv",this.props)
+        //console.log("ffffvv",this.props)
         return (
         	<div className="footer">
 	            <TabBar
@@ -115,8 +116,8 @@ class MyTabBar extends React.Component {
 
 //约束类型
 MyTabBar.propTypes = {
-    //selectedTab: PropTypes.string.isRequired,
-    //changeTab: PropTypes.func.isRequired
+    selectedTab: PropTypes.string.isRequired,
+    changeTab: PropTypes.func.isRequired
 };
 
 //事件创造器

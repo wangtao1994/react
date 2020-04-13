@@ -198,14 +198,14 @@ function text(){
 
 
 //创建reducer 根据老的state和action 生成新的state
-function counter(state=0,action){
+function counter(state=1,action){
     switch (action.type) {
         case ADD_N:
             return state+1
         case REM_N:
             return state-1
         default:
-             return 0 
+             return 1 
     }
 }
 

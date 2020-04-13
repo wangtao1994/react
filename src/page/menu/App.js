@@ -118,15 +118,29 @@ export default class index extends React.Component{
 		}, 100);
 
 	}
-	clickItem(){
-		
-		console.log(this);
+	clickItem(index){		
+		console.log(this,index);
+		if(index==1){
+			this.props.history.push({
+				pathname:'/newlist',
+				query:{
+					name:"涛涛1",
+				}
+			});
+		}else{					
+			this.props.history.push({
+				pathname:'/caoshiindex',
+				query:{
+					name:"涛涛1",
+				}
+			});
+		}
 	}			
     render() {
     	
     	const {history, isFetching, selectedTab, homeListObj, indexListNextPage, getNewArticleDetail} = this.props;
     	var  main=(
-    		<div>			
+    		<div className="content">			
 		        <WingBlank>
 			        <Carousel autoplay={true} infinite>
 			          {
@@ -149,7 +163,7 @@ export default class index extends React.Component{
 				<div className="list">				
 					<ul>
 						{this.state.listdata.map((val,index)=>(
-							<li key={ val.id } onClick={this.clickItem.bind(this)}>
+							<li key={ val.id } onClick={this.clickItem.bind(this,index)}>
 								<img src={ val.src }/>
 								{val.name}							
 							</li>
